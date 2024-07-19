@@ -10,14 +10,27 @@
 // }
 /*sum of a number*/
 
+// #include <stdio.h>
+
+// int main(void) {
+//     // Write C code here
+//  int num1,num2,sum;
+//  printf("Enter two number:");
+//  scanf("%d%d",&num1,&num2);
+//  sum=num1+num2;
+//  printf("Result:%d",sum);
+//     return 0;
+// }
+
+
 #include <stdio.h>
 
 int main(void) {
     // Write C code here
- int num1,num2,sum;
- printf("Enter two number:");
- scanf("%d%d",&num1,&num2);
- sum=num1+num2;
- printf("Result:%d",sum);
+float num1,num2,num3,average;
+printf("Enter three number:");
+scanf("%f%f%f",&num1,&num2,&num3);
+average=(num1+num2+num3)/3;
+printf("result:%f",average);
     return 0;
 }
