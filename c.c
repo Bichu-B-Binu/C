@@ -3,7 +3,8 @@
 
 int main() {
     // Write C code here
-    printf("Try programiz.pro");
-
+    int a;
+    scanf("%d",&a);
+    printf("you have entered %d",a);
     return 0;
 }
