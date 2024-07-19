@@ -34,3 +34,19 @@
 // printf("result:%f",average);
 //     return 0;
 // }
+
+/*Swapping*/
+
+#include <stdio.h>
+
+int main(void) {
+    // Write C code here
+int a=10,b=20,temp;
+temp=a;
+a=b;
+b=temp;
+printf("a:%d b:%d",a,b);
+
+
+    return 0;
+}
