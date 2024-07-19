@@ -22,15 +22,15 @@
 //     return 0;
 // }
 
+/*Average of a number*/
+// #include <stdio.h>
 
-#include <stdio.h>
-
-int main(void) {
-    // Write C code here
-float num1,num2,num3,average;
-printf("Enter three number:");
-scanf("%f%f%f",&num1,&num2,&num3);
-average=(num1+num2+num3)/3;
-printf("result:%f",average);
-    return 0;
-}
+// int main(void) {
+//     // Write C code here
+// float num1,num2,num3,average;
+// printf("Enter three number:");
+// scanf("%f%f%f",&num1,&num2,&num3);
+// average=(num1+num2+num3)/3;
+// printf("result:%f",average);
+//     return 0;
+// }
