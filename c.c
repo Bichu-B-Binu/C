@@ -79,3 +79,20 @@
 
 //     return 0;
 // }
+
+
+#include <stdio.h>
+
+int main() {
+    int P;
+    float R,n,SI;
+    printf("Enter the principal amount:");
+    scanf("%d",&P);
+    printf("Enter the intrest rate:");
+    scanf("%f",&R);
+    printf("Enter the number of years:");
+    scanf("%f",&n);
+    SI=(P*R*n)/100;
+    printf("Simple intrest is: %f",SI);
+    return 0;
+}
