@@ -52,14 +52,30 @@
 // }
 
 
+// #include <stdio.h>
+
+// int main() {
+//     // Write C code here
+//     char a;
+//     printf("Enter a char");
+//     scanf("%c",&a);
+//     printf("approved %c",a);
+
+//     return 0;
+// }
+
 #include <stdio.h>
 
 int main() {
-    // Write C code here
-    char a;
-    printf("Enter a char");
-    scanf("%c",&a);
-    printf("approved %c",a);
+    
+    int num1;
+    float num2, sum;
+    printf("Enter first number:");
+    scanf("%d",&num1);
+    printf("Enter second number:");
+    scanf("%f",&num2);
+    sum=num1+num2;
+    printf("result %f",sum);
 
     return 0;
 }
