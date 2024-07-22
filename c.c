@@ -130,28 +130,58 @@
 // }
 
 
+// #include <stdio.h>
+
+// int main() {
+//    int num1,num2,num3;
+//    printf("Enter first number:");
+//    scanf("%d",&num1);
+//    printf("Enter second number:");
+//    scanf("%d",&num2);
+//    printf("Enter third number:");
+//    scanf("%d",&num3);
+//    if(num1<num2){
+//        if(num2<num3){
+//              printf("The gratest number is %d",num3);
+//        }else{
+//              printf("The gratest number is %d",num2);
+//        }
+//    }else{
+//        if(num1<num3){
+//              printf("The gratest number is %d",num3);
+//        }else{
+//              printf("The gratest number is %d",num1);
+//        }
+//    }
+//     return 0;
+// }
+
+
 #include <stdio.h>
 
 int main() {
-   int num1,num2,num3;
+   int num1,num2,choice,result;
    printf("Enter first number:");
    scanf("%d",&num1);
    printf("Enter second number:");
    scanf("%d",&num2);
-   printf("Enter third number:");
-   scanf("%d",&num3);
-   if(num1<num2){
-       if(num2<num3){
-             printf("The gratest number is %d",num3);
-       }else{
-             printf("The gratest number is %d",num2);
-       }
-   }else{
-       if(num1<num3){
-             printf("The gratest number is %d",num3);
-       }else{
-             printf("The gratest number is %d",num1);
-       }
-   }
+    printf("1 for addition \n2 for substration\n3 for multiplication \n4 for division \nEnter your choice:");
+    scanf("%d",&choice);
+    if(choice==1){
+        result=num1+num2;
+       
+    }else if(choice==2){
+        result=num1-num2;
+      
+    }else if(choice==3){
+        result=num1*num2;
+        
+    }else if(choice==4){
+        result=num1/num2;
+     
+    }else {
+        printf("Your not a human");
+    }
+       printf("Your result is %d",result);
     return 0;
 }
