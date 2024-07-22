@@ -98,16 +98,33 @@
 // }
 
 
+// #include <stdio.h>
+
+// int main() {
+//    int num;
+//    printf("Enter a number:");
+//    scanf("%d",&num);
+//    if(num<0){
+//        printf("The number is negative");
+//    }else{
+//        printf("The number is Positive");
+//    }
+//     return 0;
+// }
+
+
 #include <stdio.h>
 
 int main() {
-   int num;
-   printf("Enter a number:");
-   scanf("%d",&num);
-   if(num<0){
-       printf("The number is negative");
+   int num1,num2;
+   printf("Enter first number:");
+   scanf("%d",&num1);
+   printf("Enter second number:");
+   scanf("%d",&num2);
+   if(num1<num2){
+       printf("Second number gratert than First number and the number is %d",num2);
    }else{
-       printf("The number is Positive");
+       printf("First number grater than second  number and the number is %d",num1);
    }
     return 0;
 }
