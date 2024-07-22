@@ -64,18 +64,18 @@
 //     return 0;
 // }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
+// int main() {
     
-    int num1;
-    float num2, sum;
-    printf("Enter first number:");
-    scanf("%d",&num1);
-    printf("Enter second number:");
-    scanf("%f",&num2);
-    sum=num1+num2;
-    printf("result %f",sum);
+//     int num1;
+//     float num2, sum;
+//     printf("Enter first number:");
+//     scanf("%d",&num1);
+//     printf("Enter second number:");
+//     scanf("%f",&num2);
+//     sum=num1+num2;
+//     printf("result %f",sum);
 
-    return 0;
-}
+//     return 0;
+// }
