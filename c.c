@@ -217,17 +217,46 @@
 // Write a program to check whether a student has passed or failed in a subject after he or she enters their mark (pass mark for a subject is 50 out of 100).
 // Program should accept an input from the user and output a message as “Passed” or “Failed”
 
+// #include <stdio.h>
+
+// int main() {
+//    float mark;
+//    printf("Enter the mark of student:");
+//    scanf("%f",&mark);
+//    if(mark>=50){
+//       printf("Passed");
+//    }else{
+//        printf("Failed");
+//    }
+   
+//     return 0;
+// }
+
+
+// Write a program to show the grade obtained by a student after he/she enters their total mark percentage.
+
+
 #include <stdio.h>
 
 int main() {
-   float mark;
-   printf("Enter the mark of student:");
-   scanf("%f",&mark);
-   if(mark>=50){
-      printf("Passed");
-   }else{
-       printf("Failed");
-   }
-   
+    float totalMark;
+    printf("Enter the student mark:");
+    scanf("%f",&totalMark);
+    if(totalMark>=90){
+        printf("A Grade\n");
+    }else if(totalMark>=80){
+        printf("B Grade\n");
+    }else if(70<=totalMark){
+        printf("C Grade\n");
+    }else if(60<=totalMark){
+        printf("D Grade\n");
+    }else if(50<=totalMark){
+        printf("E Grade\n");
+    }else if(totalMark<=50){
+        printf("Failed");
+    }else{
+        printf("Your entered wroung data");
+    }
+    
     return 0;
 }
