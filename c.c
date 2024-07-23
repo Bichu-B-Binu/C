@@ -159,29 +159,56 @@
 
 #include <stdio.h>
 
-int main() {
-   int num1,num2,choice,result;
-   printf("Enter first number:");
-   scanf("%d",&num1);
-   printf("Enter second number:");
-   scanf("%d",&num2);
-    printf("1 for addition \n2 for substration\n3 for multiplication \n4 for division \nEnter your choice:");
-    scanf("%d",&choice);
-    if(choice==1){
-        result=num1+num2;
+// int main() {
+//    int num1,num2,choice,result;
+//    printf("Enter first number:");
+//    scanf("%d",&num1);
+//    printf("Enter second number:");
+//    scanf("%d",&num2);
+//     printf("1 for addition \n2 for substration\n3 for multiplication \n4 for division \nEnter your choice:");
+//     scanf("%d",&choice);
+//     if(choice==1){
+//         result=num1+num2;
        
-    }else if(choice==2){
-        result=num1-num2;
+//     }else if(choice==2){
+//         result=num1-num2;
       
-    }else if(choice==3){
-        result=num1*num2;
+//     }else if(choice==3){
+//         result=num1*num2;
         
-    }else if(choice==4){
-        result=num1/num2;
+//     }else if(choice==4){
+//         result=num1/num2;
      
-    }else {
-        printf("Your not a human");
-    }
-       printf("Your result is %d",result);
+//     }else {
+//         printf("Your not a human");
+//     }
+//        printf("Your result is %d",result);
+//     return 0;
+// }
+
+
+#include <stdio.h>
+
+int main() {
+   int food;
+   printf("\nItems \n1.Porotta \n2.Briyani \n3.Frid Rice \n4.Mandhi \nSelect a Item: ");
+   scanf("%d",&food);
+    // scanf("%d",&choice);
+   switch(food){
+       case 1:
+       printf("You are selected item is Porotta");
+       break;
+       case 2:
+       printf("You are selected item is Briyani");
+       break;
+       case 3:
+       printf("You are selected item is Frid Rice");
+       break;
+       printf("You are selected item is Mandhi");
+       break;
+       default:
+       printf("This item not avilable");
+   }
+      
     return 0;
 }
