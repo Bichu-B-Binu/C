@@ -187,28 +187,47 @@
 // }
 
 
+// #include <stdio.h>
+
+// int main() {
+//    int food;
+//    printf("\nItems \n1.Porotta \n2.Briyani \n3.Frid Rice \n4.Mandhi \nSelect a Item: ");
+//    scanf("%d",&food);
+//     // scanf("%d",&choice);
+//    switch(food){
+//        case 1:
+//        printf("You are selected item is Porotta");
+//        break;
+//        case 2:
+//        printf("You are selected item is Briyani");
+//        break;
+//        case 3:
+//        printf("You are selected item is Frid Rice");
+//        break;
+//        printf("You are selected item is Mandhi");
+//        break;
+//        default:
+//        printf("This item not avilable");
+//    }
+      
+//     return 0;
+// }
+
+
+// Write a program to check whether a student has passed or failed in a subject after he or she enters their mark (pass mark for a subject is 50 out of 100).
+// Program should accept an input from the user and output a message as “Passed” or “Failed”
+
 #include <stdio.h>
 
 int main() {
-   int food;
-   printf("\nItems \n1.Porotta \n2.Briyani \n3.Frid Rice \n4.Mandhi \nSelect a Item: ");
-   scanf("%d",&food);
-    // scanf("%d",&choice);
-   switch(food){
-       case 1:
-       printf("You are selected item is Porotta");
-       break;
-       case 2:
-       printf("You are selected item is Briyani");
-       break;
-       case 3:
-       printf("You are selected item is Frid Rice");
-       break;
-       printf("You are selected item is Mandhi");
-       break;
-       default:
-       printf("This item not avilable");
+   float mark;
+   printf("Enter the mark of student:");
+   scanf("%f",&mark);
+   if(mark>=50){
+      printf("Passed");
+   }else{
+       printf("Failed");
    }
-      
+   
     return 0;
 }
