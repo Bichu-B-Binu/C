@@ -323,8 +323,8 @@ int main() {
    sum=0;
    for(i=0;i<=num;i++){
        sum=sum+i;
-       printf("Sum %d\n",sum);
    }
+       printf("Sum %d\n",sum);
 
     return 0;
 }
