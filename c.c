@@ -330,25 +330,42 @@
 // }
 
 
+// #include <stdio.h>
+
+// int main() {
+//     int num,i,flag=0;
+//     printf("Enter a number:");
+//     scanf("%d",&num);
+    
+//     for(i=2;i<num/2;i++){
+//         if(num%i==0){
+//             flag=1;
+//             break;
+//         }
+      
+//     }
+//      if(flag==0){
+//             printf("It is a prime number");
+//         }else{
+//             printf("It is not a prime number");
+//         }
+ 
+//     return 0;
+// }
+
+
 #include <stdio.h>
 
 int main() {
-    int num,i,flag=0;
-    printf("Enter a number:");
+    int i,num,j;
+   
+    printf("How many stars do you want enter a number:");
     scanf("%d",&num);
-    
-    for(i=2;i<num/2;i++){
-        if(num%i==0){
-            flag=1;
-            break;
+    for(i=1;i<=num;i++){
+        for(j=0;j<i;j++){
+            printf("*");
         }
-      
+        printf("\n");
     }
-     if(flag==0){
-            printf("It is a prime number");
-        }else{
-            printf("It is not a prime number");
-        }
- 
     return 0;
 }
