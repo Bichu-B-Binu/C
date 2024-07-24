@@ -303,12 +303,27 @@
 // }
 
 
+// #include <stdio.h>
+
+// int main() {
+//    int i;
+//    for(i=1;i<=100;i++){
+//        printf("%d\n",i);
+//    }
+
+//     return 0;
+// }
+
 #include <stdio.h>
 
 int main() {
-   int i;
-   for(i=1;i<=100;i++){
-       printf("%d\n",i);
+   int i,num,sum;
+   printf("Enter your number:");
+   scanf("%d",&num);
+   sum=0;
+   for(i=0;i<=num;i++){
+       sum=sum+i;
+       printf("Sum %d\n",sum);
    }
 
     return 0;
