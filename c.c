@@ -314,17 +314,41 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+
+// int main() {
+//    int i,num,sum;
+//    printf("Enter your number:");
+//    scanf("%d",&num);
+//    sum=0;
+//    for(i=0;i<=num;i++){
+//        sum=sum+i;
+//    }
+//        printf("Sum %d\n",sum);
+
+//     return 0;
+// }
+
+
 #include <stdio.h>
 
 int main() {
-   int i,num,sum;
-   printf("Enter your number:");
-   scanf("%d",&num);
-   sum=0;
-   for(i=0;i<=num;i++){
-       sum=sum+i;
-   }
-       printf("Sum %d\n",sum);
-
+    int num,i,flag=0;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    
+    for(i=2;i<num/2;i++){
+        if(num%i==0){
+            flag=1;
+            break;
+        }
+      
+    }
+     if(flag==0){
+            printf("It is a prime number");
+        }else{
+            printf("It is not a prime number");
+        }
+ 
     return 0;
 }
