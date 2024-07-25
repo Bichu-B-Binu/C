@@ -452,17 +452,43 @@
 // 1 2 3 4
 // 1 2 3 4 5
 
+// #include <stdio.h>
+
+// int main() {
+//   int i,j,num;
+//   printf("Enter a number:");
+//   scanf("%d",&num);
+//   for(i=1;i<=num;i++){
+//       for(j=1;j<=i;j++){
+//           printf("%d ",j);
+//       }
+//       printf("\n");
+//   }
+//     return 0;
+// }
+
+
 #include <stdio.h>
 
 int main() {
-  int i,j,num;
-  printf("Enter a number:");
-  scanf("%d",&num);
-  for(i=1;i<=num;i++){
-      for(j=1;j<=i;j++){
-          printf("%d ",j);
-      }
-      printf("\n");
+  int a[1000];
+  int i,limit;
+  
+  
+  printf("Enter a limit:");
+  scanf("%d",&limit);
+  
+  printf("Enter values:\n");
+  for(i=0;i<limit;i++){
+      scanf("%d",&a[i]);
   }
+  
+  
+  printf("Entered values:\n");
+  for(i=0;i<limit;i++){
+      printf("%d\n",a[i]);
+  }
+  
+  
     return 0;
 }
