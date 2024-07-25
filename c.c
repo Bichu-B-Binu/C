@@ -419,20 +419,50 @@
 //     return 0;
 // }
 
+// Write a program to find the sum of all the odd numbers for a given limit
+// Program should accept an input as limit from the user and display the sum of all the odd numbers within that limit
+// For example if the input limit is 10 then the result is 1+3+5+7+9 = 25
+// Output: Enter a limit
+// Input: 10
+// Output: Sum of odd numbers = 25 
+
+
+// #include <stdio.h>
+
+// int main() {
+//   int i,num,result=0;
+//   printf("Enter a limit:");
+//   scanf("%d",&num);
+  
+//   for(i=0;i<num;i++){
+//       if(i%2!=0){
+//           result=result+i;
+
+//       }
+//   }
+//             printf("sum of odd number:%d\n",result);
+//     return 0;
+// }
+
+
+// Write a program to print the following pattern (hint: use nested loop)
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
 
 #include <stdio.h>
 
 int main() {
-  int i,num,result=0;
-  printf("Enter a limit:");
+  int i,j,num;
+  printf("Enter a number:");
   scanf("%d",&num);
-  
-  for(i=0;i<num;i++){
-      if(i%2!=0){
-          result=result+i;
-
+  for(i=1;i<=num;i++){
+      for(j=1;j<=i;j++){
+          printf("%d ",j);
       }
+      printf("\n");
   }
-            printf("sum of odd number:%d\n",result);
     return 0;
 }
