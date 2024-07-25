@@ -493,25 +493,68 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+
+// int main() {
+//   int a[1000];
+//   int i,limit,sum=0;
+  
+//   printf("Enter a limit:");
+//   scanf("%d",&limit);
+  
+//   printf("Enter values:\n");
+//   for(i=0;i<limit;i++){
+//       scanf("%d",&a[i]);
+//   }
+  
+//   for(i=0;i<limit;i++){
+//       sum=sum+a[i];
+//   }
+  
+//   printf("Sum:%d",sum);
+  
+//     return 0;
+// }
+
+
 #include <stdio.h>
 
 int main() {
-  int a[1000];
-  int i,limit,sum=0;
-  
+  int arr[1000];
+  int i,search,limit,flag;
   printf("Enter a limit:");
   scanf("%d",&limit);
   
   printf("Enter values:\n");
-  for(i=0;i<limit;i++){
-      scanf("%d",&a[i]);
+   for(i=0;i<limit;i++){
+      scanf("%d",&arr[i]);
   }
+    printf("Enter your search Number:");
+  scanf("%d",&search);
   
+ 
+
   for(i=0;i<limit;i++){
-      sum=sum+a[i];
+      if(search==arr[i]){
+      flag=1;
+          break;
+      }
   }
-  
-  printf("Sum:%d",sum);
-  
+   if(flag==1){
+          printf("Your position is :%d",i+1);
+      }else{
+          printf("Position not found");
+      }
     return 0;
 }
+
+// output
+// Enter a limit:5
+// Enter values:
+// 12
+// 46
+// 82
+// 46
+// 73
+// Enter your search Number:82
+// Your position is :3
