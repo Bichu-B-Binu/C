@@ -468,12 +468,36 @@
 // }
 
 
+// #include <stdio.h>
+
+// int main() {
+//   int a[1000];
+//   int i,limit;
+  
+  
+//   printf("Enter a limit:");
+//   scanf("%d",&limit);
+  
+//   printf("Enter values:\n");
+//   for(i=0;i<limit;i++){
+//       scanf("%d",&a[i]);
+//   }
+  
+  
+//   printf("Entered values:\n");
+//   for(i=0;i<limit;i++){
+//       printf("%d\n",a[i]);
+//   }
+  
+  
+//     return 0;
+// }
+
 #include <stdio.h>
 
 int main() {
   int a[1000];
-  int i,limit;
-  
+  int i,limit,sum=0;
   
   printf("Enter a limit:");
   scanf("%d",&limit);
@@ -483,12 +507,11 @@ int main() {
       scanf("%d",&a[i]);
   }
   
-  
-  printf("Entered values:\n");
   for(i=0;i<limit;i++){
-      printf("%d\n",a[i]);
+      sum=sum+a[i];
   }
   
+  printf("Sum:%d",sum);
   
     return 0;
 }
