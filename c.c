@@ -405,16 +405,34 @@
 // 9 x 5 = 45
 // 10 x 5 = 50
 
+// #include <stdio.h>
+
+// int main() {
+//   int i,num;
+//   printf("Enter your multiplication number:");
+//   scanf("%d",&num);
+//   for(i=1;i<=10;i++){
+   
+//      printf("%d*%d=%d\n",i,num,i*num);
+//   }
+  
+//     return 0;
+// }
+
+
 #include <stdio.h>
 
 int main() {
-  int i,num;
-  printf("Enter your multiplication number:");
+  int i,num,result=0;
+  printf("Enter a limit:");
   scanf("%d",&num);
-  for(i=1;i<=10;i++){
-   
-     printf("%d*%d=%d\n",i,num,i*num);
-  }
   
+  for(i=0;i<num;i++){
+      if(i%2!=0){
+          result=result+i;
+
+      }
+  }
+            printf("sum of odd number:%d\n",result);
     return 0;
 }
