@@ -354,18 +354,35 @@
 // }
 
 
+// #include <stdio.h>
+
+// int main() {
+//     int i,num,j;
+   
+//     printf("How many stars do you want enter a number:");
+//     scanf("%d",&num);
+//     for(i=1;i<=num;i++){
+//         for(j=0;j<i;j++){
+//             printf("*");
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+
 #include <stdio.h>
 
 int main() {
-    int i,num,j;
-   
-    printf("How many stars do you want enter a number:");
-    scanf("%d",&num);
-    for(i=1;i<=num;i++){
-        for(j=0;j<i;j++){
-            printf("*");
-        }
-        printf("\n");
-    }
+  int i,num,j;
+  printf("How many stars you want in reverse order:");
+  scanf("%d",&num);
+  for(i=1;i<=num;i++){
+      for(j=num;j>=i;j--){
+          printf("* ");
+      }
+      printf("\n");
+  }
+
     return 0;
 }
