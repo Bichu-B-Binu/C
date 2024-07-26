@@ -561,35 +561,72 @@
 
 
 //Selection Sorting
+// #include <stdio.h>
+
+// int main() {
+//     int arr[1000],i,j,limit,temp;
+    
+//     printf("Enter your limit:");
+//     scanf("%d",&limit);
+    
+//     printf("Enter your Values:\n");
+//     for(i=0;i<limit;i++){
+//         scanf("%d",&arr[i]);
+//     }
+    
+    
+//     for(i=0;i<limit-1;i++){
+//         for(j=i+1;j<limit;j++){
+//             if(arr[i]>arr[j]){
+//                 temp=arr[i];
+//                 arr[i]=arr[j];
+//                 arr[j]=temp;
+//             }
+//         }
+        
+//     }
+//     printf("Sorted\n");
+//     for(i=0;i<limit;i++){
+//         printf("%d\n",arr[i]);
+//     }
+  
+    
+//     return 0;
+// }
+
 #include <stdio.h>
 
 int main() {
-    int arr[1000],i,j,limit,temp;
+    int i,j,limit,arr[1000],temp;
     
-    printf("Enter your limit:");
+    
+    printf("Enter the limit:\n");
     scanf("%d",&limit);
     
-    printf("Enter your Values:\n");
+    printf("Enter the Array 1 values:\n");
     for(i=0;i<limit;i++){
         scanf("%d",&arr[i]);
     }
     
-    
-    for(i=0;i<limit-1;i++){
-        for(j=i+1;j<limit;j++){
-            if(arr[i]>arr[j]){
-                temp=arr[i];
-                arr[i]=arr[j];
-                arr[j]=temp;
-            }
+     printf("Enter the Array 2 values:\n");
+    for(j=0;j<limit;j++){
+        scanf("%d",&arr[j]);
+    }
+            temp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
+            printf("Array 1\n");
+            
+        for(i=0;i<limit;i++){
+            printf("%d\n",arr[i]);
         }
         
-    }
-    printf("Sorted\n");
-    for(i=0;i<limit;i++){
-        printf("%d\n",arr[i]);
-    }
+       printf("Array 2\n");
+        for(j=0;j<limit;j++){
+            printf("%d\n",arr[j]);
+        }
   
+    
     
     return 0;
 }
