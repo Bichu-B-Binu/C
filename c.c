@@ -517,36 +517,36 @@
 // }
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-  int arr[1000];
-  int i,search,limit,flag;
-  printf("Enter a limit:");
-  scanf("%d",&limit);
+// int main() {
+//   int arr[1000];
+//   int i,search,limit,flag;
+//   printf("Enter a limit:");
+//   scanf("%d",&limit);
   
-  printf("Enter values:\n");
-   for(i=0;i<limit;i++){
-      scanf("%d",&arr[i]);
-  }
-    printf("Enter your search Number:");
-  scanf("%d",&search);
+//   printf("Enter values:\n");
+//    for(i=0;i<limit;i++){
+//       scanf("%d",&arr[i]);
+//   }
+//     printf("Enter your search Number:");
+//   scanf("%d",&search);
   
  
 
-  for(i=0;i<limit;i++){
-      if(search==arr[i]){
-      flag=1;
-          break;
-      }
-  }
-   if(flag==1){
-          printf("Your position is :%d",i+1);
-      }else{
-          printf("Position not found");
-      }
-    return 0;
-}
+//   for(i=0;i<limit;i++){
+//       if(search==arr[i]){
+//       flag=1;
+//           break;
+//       }
+//   }
+//    if(flag==1){
+//           printf("Your position is :%d",i+1);
+//       }else{
+//           printf("Position not found");
+//       }
+//     return 0;
+// }
 
 // output
 // Enter a limit:5
@@ -558,3 +558,38 @@ int main() {
 // 73
 // Enter your search Number:82
 // Your position is :3
+
+
+//Selection Sorting
+#include <stdio.h>
+
+int main() {
+    int arr[1000],i,j,limit,temp;
+    
+    printf("Enter your limit:");
+    scanf("%d",&limit);
+    
+    printf("Enter your Values:\n");
+    for(i=0;i<limit;i++){
+        scanf("%d",&arr[i]);
+    }
+    
+    
+    for(i=0;i<limit-1;i++){
+        for(j=i+1;j<limit;j++){
+            if(arr[i]>arr[j]){
+                temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+        }
+        
+    }
+    printf("Sorted\n");
+    for(i=0;i<limit;i++){
+        printf("%d\n",arr[i]);
+    }
+  
+    
+    return 0;
+}
