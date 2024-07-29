@@ -606,39 +606,51 @@
 // Array2: 10, 20, 30, 40, 50
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    int i,j,limit,arr[1000],temp;
+// int main() {
+//     int i,j,limit,arr[1000],temp;
     
     
-    printf("Enter the limit:\n");
-    scanf("%d",&limit);
+//     printf("Enter the limit:\n");
+//     scanf("%d",&limit);
     
-    printf("Enter the Array 1 values:\n");
-    for(i=0;i<limit;i++){
-        scanf("%d",&arr[i]);
-    }
+//     printf("Enter the Array 1 values:\n");
+//     for(i=0;i<limit;i++){
+//         scanf("%d",&arr[i]);
+//     }
     
-     printf("Enter the Array 2 values:\n");
-    for(j=0;j<limit;j++){
-        scanf("%d",&arr[j]);
-    }
-            temp=arr[i];
-            arr[i]=arr[j];
-            arr[j]=temp;
-            printf("Array 1\n");
-            
-        for(i=0;i<limit;i++){
-            printf("%d\n",arr[i]);
-        }
+//      printf("Enter the Array 2 values:\n");
+//     for(j=0;j<limit;j++){
+//         scanf("%d",&arr[j]);
+//     }
+//             temp=arr[i];
+//             arr[i]=arr[j];
+//             arr[j]=temp;
+
+//         printf("Array 1\n");
+//         for(i=0;i<limit;i++){
+//             printf("%d\n",arr[i]);
+//         }
         
-       printf("Array 2\n");
-        for(j=0;j<limit;j++){
-            printf("%d\n",arr[j]);
-        }
+//        printf("Array 2\n");
+//         for(j=0;j<limit;j++){
+//             printf("%d\n",arr[j]);
+//         }
   
     
     
+//     return 0;
+// }
+
+
+#include <stdio.h>
+
+int main() {
+    char name[100];
+    printf("Enter your name:");
+    scanf("%s",name);
+    printf("Your name is:%s",name);
+
     return 0;
 }
