@@ -601,7 +601,7 @@
 // Input: 10, 20, 30, 40, 50
 // Output: Enter the values of Array 2
 // Input: 15, 25, 35, 45, 55
-// Output: Arrays after swapping:
+// Output: Arrays after swapping: 
 // Array1: 15, 25, 35, 45, 55
 // Array2: 10, 20, 30, 40, 50
 
@@ -644,13 +644,36 @@
 // }
 
 
+// #include <stdio.h>
+
+// int main() {
+//     char name[100];
+//     printf("Enter your name:");
+//     scanf("%s",name);
+//     printf("Your name is:%s",name);
+
+//     return 0;
+// }
+
+
 #include <stdio.h>
 
 int main() {
-    char name[100];
-    printf("Enter your name:");
-    scanf("%s",name);
-    printf("Your name is:%s",name);
+    int a[3][3],i,j;
+    
+    printf("Enter the metrix numbers:\n");
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
 
+    printf("Entered number is:\n");
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
+    }
     return 0;
 }
