@@ -656,24 +656,56 @@
 // }
 
 
+// #include <stdio.h>
+
+// int main() {
+//     int a[3][3],i,j;
+    
+//     printf("Enter the metrix numbers:\n");
+//     for(i=0;i<3;i++){
+//         for(j=0;j<3;j++){
+//             scanf("%d",&a[i][j]);
+//         }
+//     }
+
+//     printf("Entered number is:\n");
+//     for(i=0;i<3;i++){
+//         for(j=0;j<3;j++){
+//             printf("%d\t",a[i][j]);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+
+// Online C compiler to run C program online
 #include <stdio.h>
 
 int main() {
-    int a[3][3],i,j;
+    int limit,arr[500],i,searchKey,flag=0;
+    printf("Enter the limit:\n");
+    scanf("%d",&limit);
     
-    printf("Enter the metrix numbers:\n");
-    for(i=0;i<3;i++){
-        for(j=0;j<3;j++){
-            scanf("%d",&a[i][j]);
+    printf("Enter the array values: \n");
+    for(i=0;i<limit;i++) {
+        scanf("%d",&arr[i]);
+    }
+    
+    printf("Please enter the known position: \n");
+         scanf("%d",&searchKey);
+    for(i=0;i<limit;i++){
+   
+        if(searchKey == arr[i]){
+            flag = 1;
+            break;
         }
     }
-
-    printf("Entered number is:\n");
-    for(i=0;i<3;i++){
-        for(j=0;j<3;j++){
-            printf("%d\t",a[i][j]);
-        }
-        printf("\n");
+    
+    if(flag == 1){
+        printf("The value position is %d", i+1);
+    }else{
+        printf("Invalued Value");
     }
     return 0;
 }
