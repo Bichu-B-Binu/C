@@ -784,25 +784,45 @@
 // }
 
 
+// #include <stdio.h>
+// int sum(int,int);
+// int main() {
+//     int a,b,c;
+    
+//     printf("Enter two number: \n");
+//     scanf("%d%d", &a,&b);
+    
+//     c = sum(a,b);
+    
+//     printf("Result is: %d",c);
+    
+//     return 0;
+// }
+
+// int sum(int n1, int n2) {
+    
+//     int res;
+//     res = n1 + n2;
+    
+//     return res;
+// }
+
 #include <stdio.h>
-int sum(int,int);
+int sum();
 int main() {
-    int a,b,c;
     
-    printf("Enter two number: \n");
-    scanf("%d%d", &a,&b);
-    
-    c = sum(a,b);
-    
-    printf("Result is: %d",c);
-    
+    int k;
+    k = sum();
+    printf("Result is : %d",k);
     return 0;
 }
 
-int sum(int n1, int n2) {
+int sum(){
+    int a,b,c;
+    printf("Enter two number: \n");
+    scanf("%d%d",&a,&b);
     
-    int res;
-    res = n1 + n2;
+    c = a + b;
     
-    return res;
+    return c;
 }
