@@ -746,20 +746,39 @@
 // }
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
-void sum();
+// void sum();
+// int main() {
+    
+//     sum();
+    
+// return 0;    
+// }
+
+// void sum() {
+//     int n1, n2,sum;
+//     printf("Enter a value: \n");
+//     scanf("%d%d",&n1,&n2);
+//     sum=n1+n2;
+//     printf("%d",sum);
+// }
+
+#include <stdio.h>
+void sum(int,int);
 int main() {
+    int a,b;
+    printf("Enter the  two numbers: \n");
+    scanf("%d%d",&a,&b);
     
-    sum();
+    sum(a,b);
     
-return 0;    
+    return 0;
 }
 
-void sum() {
-    int n1, n2,sum;
-    printf("Enter a value: \n");
-    scanf("%d%d",&n1,&n2);
-    sum=n1+n2;
-    printf("%d",sum);
+void sum(int n1, int n2){
+    int result;
+    result= n1 + n2;
+    printf("Result is:%d \n", result);
+    
 }
