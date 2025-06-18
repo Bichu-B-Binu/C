@@ -764,21 +764,45 @@
 //     printf("%d",sum);
 // }
 
-#include <stdio.h>
-void sum(int,int);
-int main() {
-    int a,b;
-    printf("Enter the  two numbers: \n");
-    scanf("%d%d",&a,&b);
+// #include <stdio.h>
+// void sum(int,int);
+// int main() {
+//     int a,b;
+//     printf("Enter the  two numbers: \n");
+//     scanf("%d%d",&a,&b);
     
-    sum(a,b);
+//     sum(a,b);
+    
+//     return 0;
+// }
+
+// void sum(int n1, int n2){
+//     int result;
+//     result= n1 + n2;
+//     printf("Result is:%d \n", result);
+    
+// }
+
+
+#include <stdio.h>
+int sum(int,int);
+int main() {
+    int a,b,c;
+    
+    printf("Enter two number: \n");
+    scanf("%d%d", &a,&b);
+    
+    c = sum(a,b);
+    
+    printf("Result is: %d",c);
     
     return 0;
 }
 
-void sum(int n1, int n2){
-    int result;
-    result= n1 + n2;
-    printf("Result is:%d \n", result);
+int sum(int n1, int n2) {
     
+    int res;
+    res = n1 + n2;
+    
+    return res;
 }
