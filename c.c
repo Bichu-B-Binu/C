@@ -710,15 +710,37 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+
+// int main() {
+//     char name[20];
+    
+//     printf("Enter the name: \n");
+//     scanf("%s",name);
+    
+//     printf("Given name: %s", name);
+    
+//     return 0;
+// }
+
 #include <stdio.h>
 
 int main() {
-    char name[20];
+    int i,j,numbers[20][20];
     
-    printf("Enter the name: \n");
-    scanf("%s",name);
+    printf("Enter the numbers: \n");
+    for(i=0;i<3;i++) {
+        for (j=0;j<3;j++) {
+            scanf("%d",&numbers[i][j]);
+        }
+        
+    }
     
-    printf("Given name: %s", name);
-    
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            printf("%d\t",numbers[i][j]);
+        }
+        printf("\n");
+    }
     return 0;
 }
