@@ -680,32 +680,45 @@
 
 
 // Online C compiler to run C program online
+// #include <stdio.h>
+
+// int main() {
+//     int limit,arr[500],i,searchKey,flag=0;
+//     printf("Enter the limit:\n");
+//     scanf("%d",&limit);
+    
+//     printf("Enter the array values: \n");
+//     for(i=0;i<limit;i++) {
+//         scanf("%d",&arr[i]);
+//     }
+    
+//     printf("Please enter the known position: \n");
+//          scanf("%d",&searchKey);
+//     for(i=0;i<limit;i++){
+   
+//         if(searchKey == arr[i]){
+//             flag = 1;
+//             break;
+//         }
+//     }
+    
+//     if(flag == 1){
+//         printf("The value position is %d", i+1);
+//     }else{
+//         printf("Invalued Value");
+//     }
+//     return 0;
+// }
+
 #include <stdio.h>
 
 int main() {
-    int limit,arr[500],i,searchKey,flag=0;
-    printf("Enter the limit:\n");
-    scanf("%d",&limit);
+    char name[20];
     
-    printf("Enter the array values: \n");
-    for(i=0;i<limit;i++) {
-        scanf("%d",&arr[i]);
-    }
+    printf("Enter the name: \n");
+    scanf("%s",name);
     
-    printf("Please enter the known position: \n");
-         scanf("%d",&searchKey);
-    for(i=0;i<limit;i++){
-   
-        if(searchKey == arr[i]){
-            flag = 1;
-            break;
-        }
-    }
+    printf("Given name: %s", name);
     
-    if(flag == 1){
-        printf("The value position is %d", i+1);
-    }else{
-        printf("Invalued Value");
-    }
     return 0;
 }
