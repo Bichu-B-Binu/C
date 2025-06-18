@@ -723,24 +723,43 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+
+// int main() {
+//     int i,j,numbers[20][20];
+    
+//     printf("Enter the numbers: \n");
+//     for(i=0;i<3;i++) {
+//         for (j=0;j<3;j++) {
+//             scanf("%d",&numbers[i][j]);
+//         }
+        
+//     }
+    
+//     for(i=0;i<3;i++){
+//         for(j=0;j<3;j++){
+//             printf("%d\t",numbers[i][j]);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+
 #include <stdio.h>
 
+void sum();
 int main() {
-    int i,j,numbers[20][20];
     
-    printf("Enter the numbers: \n");
-    for(i=0;i<3;i++) {
-        for (j=0;j<3;j++) {
-            scanf("%d",&numbers[i][j]);
-        }
-        
-    }
+    sum();
     
-    for(i=0;i<3;i++){
-        for(j=0;j<3;j++){
-            printf("%d\t",numbers[i][j]);
-        }
-        printf("\n");
-    }
-    return 0;
+return 0;    
+}
+
+void sum() {
+    int n1, n2,sum;
+    printf("Enter a value: \n");
+    scanf("%d%d",&n1,&n2);
+    sum=n1+n2;
+    printf("%d",sum);
 }
